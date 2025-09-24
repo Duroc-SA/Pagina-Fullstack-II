@@ -35,7 +35,7 @@ html {
 /* Cuerpo general */
 body {
     font-family: 'PixelGridS', Arial, sans-serif;
-    background-color: #1a1d29;
+    background-color: #121520;
     color: #ffffff;
     line-height: 1.5;
 }
@@ -49,7 +49,7 @@ body {
 
 /* HEADER */
 header {
-    background-color: #242938;
+    background-color: #1a1d2a;
     height: 100px;
     padding: 20px 0;
     border-bottom: 1px solid #3a3f5c;
@@ -103,11 +103,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #4dabf7;
+    color: #3b8cc9;
 }
 
 nav a.active {
-    color: #4dabf7;
+    color: #3b8cc9;
     font-weight: bold;
 }
 
@@ -118,12 +118,28 @@ main {
 
 /* Hero Section */
 .hero {
-    background-color: #242938;
+    background-color: #1a1d2a;
     text-align: center;
     padding: 60px 20px;
     border-radius: 10px;
     margin-bottom: 40px;
     border: 1px solid #3a3f5c;
+}
+
+/* Hero específico del homepage con GIF de fondo */
+.hero-homepage {
+    background: linear-gradient(rgba(36, 41, 56, 0.6), rgba(36, 41, 56, 0.6)), url('../img/gif/homepagegif.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Hero específico de la página de productos con GIF de juegos */
+.hero-juegos {
+    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('../img/gif/bannerjuegos2.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero h2 {
@@ -140,7 +156,7 @@ main {
 
 /* Botones */
 .btn-primary {
-    background-color: #4dabf7;
+    background-color: #3b8cc9;
     color: #ffffff;
     border: none;
     padding: 15px 30px;
@@ -187,7 +203,7 @@ main {
 }
 
 .producto-card {
-    background-color: #242938;
+    background-color: #1a1d2a;
     border: 1px solid #3a3f5c;
     border-radius: 10px;
     padding: 20px;
@@ -220,7 +236,7 @@ main {
 .precio {
     font-size: 20px;
     font-weight: bold;
-    color: #4dabf7;
+    color: #3b8cc9;
     margin-bottom: 10px;
 }
 
@@ -232,7 +248,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #242938;
+    background-color: #1a1d2a;
     padding: 40px 0 20px 0;
     border-top: 1px solid #3a3f5c;
     margin-top: 40px;
@@ -269,7 +285,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #4dabf7;
+    color: #3b8cc9;
 }
 
 .footer-bottom {
