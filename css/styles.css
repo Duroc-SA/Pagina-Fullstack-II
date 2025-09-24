@@ -204,6 +204,13 @@ main {
     background-color: #1a1d29;
 }
 
+/* Tamaño de GIFs */
+.gif-producto {
+    height: 150px !important;
+    object-fit: contain !important;
+    padding: 10px;
+}
+
 .producto-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
