@@ -27,6 +27,11 @@
     box-sizing: border-box;
 }
 
+/* Forzar scrollbar vertical siempre visible */
+html {
+    overflow-y: scroll;
+}
+
 /* Cuerpo general */
 body {
     font-family: 'PixelGridS', Arial, sans-serif;
