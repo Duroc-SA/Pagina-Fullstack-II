@@ -186,6 +186,9 @@ main {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'PixelGridS', Arial, sans-serif;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-primary:hover {
