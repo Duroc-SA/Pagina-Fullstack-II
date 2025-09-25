@@ -1222,6 +1222,174 @@ footer {
     }
 }
 
+/* EASTER EGG */
+.easter-egg-link {
+    color: #ff6b6b !important;
+    text-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+    transition: all 0.3s ease;
+    font-weight: bold;
+    animation: easterEggGlow 2s ease-in-out infinite alternate;
+}
+
+.easter-egg-link:hover {
+    color: #ff5252 !important;
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.8);
+    transform: scale(1.05);
+}
+
+@keyframes easterEggGlow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 15px rgba(255, 107, 107, 0.8), 0 0 25px rgba(255, 107, 107, 0.4);
+    }
+}
+
+.easter-egg-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.easter-egg-content {
+    position: relative;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffd93d);
+    background-size: 400% 400%;
+    animation: rainbowGradient 3s ease infinite;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(255, 107, 107, 0.3);
+    border: 3px solid #fff;
+}
+
+@keyframes rainbowGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.easter-egg-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.easter-egg-close:hover {
+    color: #ff5252;
+    transform: scale(1.2);
+}
+
+.easter-egg-gif {
+    margin-bottom: 20px;
+}
+
+.easter-egg-gif img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-10px); }
+}
+
+.easter-egg-text {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.easter-egg-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    animation: textPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes textPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.easter-egg-text p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.easter-message {
+    font-style: italic;
+    font-size: 16px !important;
+    opacity: 0.9;
+    margin-bottom: 20px !important;
+}
+
+.easter-egg-text .btn-primary {
+    background: linear-gradient(45deg, #ff6b6b, #ff5252);
+    border: 2px solid #fff;
+    font-size: 18px;
+    padding: 12px 30px;
+    margin-top: 15px;
+    animation: buttonGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes buttonGlow {
+    0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+    100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 107, 107, 0.5); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes easterEggShake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* Responsive para easter egg */
+@media (max-width: 768px) {
+    .easter-egg-content {
+        margin: 20px;
+        padding: 20px;
+        max-width: calc(100% - 40px);
+    }
+    
+    .easter-egg-text h2 {
+        font-size: 24px;
+    }
+    
+    .easter-egg-text p {
+        font-size: 16px;
+    }
+    
+    .easter-message {
+        font-size: 14px !important;
+    }
+}
+
 @media (max-width: 768px) {
     /* Header adaptable en altura */
     header {

@@ -90,6 +90,7 @@
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                         <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="#" class="easter-egg-link" onclick="activateEasterEgg(event)">🎭 APRETAME SI TE ATREVES</a></li>
                     </ul>
                 </div>
                 
@@ -106,5 +107,62 @@
             </div>
         </div>
     </footer>
+
+    <!-- EASTER EGG MODAL -->
+    <div id="easterEggModal" class="easter-egg-modal">
+        <div class="easter-egg-content">
+            <span class="easter-egg-close" onclick="closeEasterEgg()">&times;</span>
+            <div class="easter-egg-gif">
+                <img src="img/gif/waos.gif" alt="Easter Egg Surprise!" id="waosGif">
+            </div>
+            <div class="easter-egg-text">
+                <h2>🎉 ¡WAOS! 🎉</h2>
+                <p>¡Encontraste el easter egg secreto de RetroPixel Store!</p>
+                <p class="easter-message">🎮 Los verdaderos gamers siempre exploran cada rincón 🕹️</p>
+                <button class="btn-primary" onclick="closeEasterEgg()">¡Genial!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function activateEasterEgg(event) {
+            event.preventDefault();
+            
+            // Mostrar el modal
+            const modal = document.getElementById('easterEggModal');
+            modal.style.display = 'flex';
+            
+            // Agregar efecto de sonido simulado (visual)
+            document.body.style.animation = 'easterEggShake 0.5s ease-in-out';
+            
+            // Reproducir el GIF desde el inicio
+            const gif = document.getElementById('waosGif');
+            gif.src = gif.src;
+            
+            // Remover animación después de un tiempo
+            setTimeout(() => {
+                document.body.style.animation = '';
+            }, 500);
+        }
+        
+        function closeEasterEgg() {
+            const modal = document.getElementById('easterEggModal');
+            modal.style.display = 'none';
+        }
+        
+        // Cerrar modal al hacer clic fuera del contenido
+        document.getElementById('easterEggModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeEasterEgg();
+            }
+        });
+        
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeEasterEgg();
+            }
+        });
+    </script>
 </body>
 </html>
