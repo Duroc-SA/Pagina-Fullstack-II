@@ -1,1 +1,89 @@
 <!-- Página de Contacto -->
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - RetroPixel Store</title>
+    <link rel="stylesheet" href="css/styles.css?v=3">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>RetroPixel Store</h1>
+            </div>            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Juegos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+            <!-- Carrito -->
+            <a href="carrito.html" class="carrito-flotante">🛒</a>
+        </div>
+    </header>
+
+    <section class="container contacto-wrapper">
+        <div class="formulario-contacto">
+            <h3>Formulario para contactar</h3>
+            <form id="form-contacto">
+                <div class="campo-form">
+                    <label for="nombre">Nombre completo </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="campo-form">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tucorreo@email.com" required>
+                </div>
+                <div class="campo-form">
+                    <label for="contenido">Contenido</label>
+                    <textarea id="contenido" name="contenido" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <button class="btn-primary" type="submit">ENVIAR MENSAJE</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🕹️ RetroPixel Store</h3>
+                    <p>Tu destino favorito para revivir la magia de los videojuegos clásicos.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="productos.html">Juegos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📧 info@retropixelstore.com</p>
+                    <p>📞 +56 9 8765 4321</p>
+                    <p>📍 Santiago, Chile</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 RetroPixel Store. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
