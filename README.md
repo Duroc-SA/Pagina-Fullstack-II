@@ -71,11 +71,6 @@ Pagina-Fullstack-II/
 
 ## 💡 Funcionalidades Destacadas
 
-### 🎭 Easter Egg Secreto
-- **Activación**: Enlace misterioso en el footer "APRETAME SI TE ATREVES"
-- **Efectos**: Modal arcoíris con animaciones, shake effect, GIF sorpresa
-- **Interacción**: Múltiples formas de cierre (X, Escape, click fuera)
-
 ### 📱 Sistema de Registro Avanzado
 - **Validación en Tiempo Real**: Contraseñas, emails, campos requeridos
 - **Medidor de Fortaleza**: Indicador visual de seguridad de contraseña
