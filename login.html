@@ -1,1 +1,174 @@
 <!-- Página de Iniciar Sesión -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - RetroPixel Store</title>
+    <link rel="stylesheet" href="css/styles.css?v=3">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>RetroPixel Store</h1>
+            </div>            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Juegos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+            <!-- Carrito flotante -->
+            <a href="carrito.html" class="carrito-flotante">🛒</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de Login -->
+        <section class="login-section">
+            <div class="container">
+                <div class="login-container">
+                    <!-- Lado izquierdo - Formulario -->
+                    <div class="login-form">
+                        <h2>🎮 Iniciar Sesión</h2>
+                        <p class="login-subtitle">¡Bienvenido de vuelta, gamer!</p>
+
+                        <form class="form-login">
+                            <div class="form-group">
+                                <label for="email">📧 Correo Electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="tu-email@ejemplo.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">🔒 Contraseña</label>
+                                <input type="password" id="password" name="password" placeholder="Tu contraseña" required>
+                                <div class="password-toggle">
+                                    <button type="button" class="show-password" onclick="togglePassword()">👁️ Mostrar</button>
+                                </div>
+                            </div>
+
+                            <div class="form-options">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="remember">
+                                    <span class="checkmark"></span>
+                                    Recordarme
+                                </label>
+                                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                            </div>
+
+                            <button type="submit" class="btn-login">🚀 Iniciar Sesión</button>
+                        </form>
+
+                        <div class="login-divider">
+                            <span>o continúa con</span>
+                        </div>
+
+                        <div class="social-login">
+                            <button class="btn-social google">
+                                <span>🌐</span> Google
+                            </button>
+                            <button class="btn-social facebook">
+                                <span>📘</span> Facebook
+                            </button>
+                            <button class="btn-social discord">
+                                <span>🎮</span> Discord
+                            </button>
+                        </div>
+
+                        <div class="register-link">
+                            <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Lado derecho - Información/Imagen -->
+                    <div class="login-info">
+                        <div class="info-content">
+                            <h3>🏆 Únete a la Comunidad Retro</h3>
+                            <ul class="benefits-list">
+                                <li>💾 Guarda tus juegos favoritos</li>
+                                <li>🛒 Compras más rápidas</li>
+                                <li>📈 Sigue tu historial de pedidos</li>
+                                <li>🎁 Accede a ofertas exclusivas</li>
+                                <li>⭐ Recibe recomendaciones personalizadas</li>
+                                <li>👥 Conecta con otros gamers retro</li>
+                            </ul>
+                            
+                            <div class="pixel-art">
+                                🕹️ 👾 🎯 🏁 ⚡ 🍄 🗡️ 🔥
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🕹️ RetroPixel Store</h3>
+                    <p>Tu destino favorito para revivir la magia de los videojuegos clásicos.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="productos.html">Juegos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📧 info@retropixelstore.com</p>
+                    <p>📞 +56 9 8765 4321</p>
+                    <p>📍 Santiago, Chile</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 RetroPixel Store. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const toggleButton = document.querySelector('.show-password');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleButton.textContent = '🙈 Ocultar';
+            } else {
+                passwordInput.type = 'password';
+                toggleButton.textContent = '👁️ Mostrar';
+            }
+        }
+
+        // Simulación de envío de formulario (solo visual)
+        document.querySelector('.form-login').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('🎮 ¡Funcionalidad de login en desarrollo! Esta es solo una vista previa visual.');
+        });
+
+        // Simulación de botones sociales
+        document.querySelectorAll('.btn-social').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('🔗 Integración con redes sociales en desarrollo. Esta es solo una vista previa visual.');
+            });
+        });
+    </script>
+</body>
+</html>
