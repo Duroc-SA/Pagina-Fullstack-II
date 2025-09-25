@@ -1,1 +1,320 @@
 <!-- Página de Registro de Usuario -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - RetroPixel Store</title>
+    <link rel="stylesheet" href="css/styles.css?v=3">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>RetroPixel Store</h1>
+            </div>            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Juegos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html" class="active">Registro</a></li>
+                </ul>
+            </nav>
+            <!-- Carrito flotante -->
+            <a href="carrito.html" class="carrito-flotante">🛒</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de Registro -->
+        <section class="register-section">
+            <div class="container">
+                <div class="register-container">
+                    <!-- Lado izquierdo - Información -->
+                    <div class="register-info">
+                        <div class="info-content">
+                            <h3>🚀 ¡Únete a la Familia Retro!</h3>
+                            <p class="welcome-text">Crea tu cuenta y descubre un mundo de nostalgia gaming</p>
+                            
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <span class="feature-icon">🛒</span>
+                                    <h4>Compras Rápidas</h4>
+                                    <p>Checkout en un solo clic</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <span class="feature-icon">⭐</span>
+                                    <h4>Lista de Deseos</h4>
+                                    <p>Guarda tus juegos favoritos</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <span class="feature-icon">🎁</span>
+                                    <h4>Ofertas Exclusivas</h4>
+                                    <p>Descuentos solo para miembros</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <span class="feature-icon">👥</span>
+                                    <h4>Comunidad</h4>
+                                    <p>Conecta con otros gamers</p>
+                                </div>
+                            </div>
+                            
+                            <div class="retro-decoration">
+                                <div class="pixel-line">▓░▓░▓░▓░▓░▓░▓░</div>
+                                <div class="game-icons">🕹️ 👾 🎯 🏆 ⚡</div>
+                                <div class="pixel-line">░▓░▓░▓░▓░▓░▓░▓</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lado derecho - Formulario -->
+                    <div class="register-form">
+                        <h2>📝 Crear Cuenta</h2>
+                        <p class="register-subtitle">¡Comienza tu aventura retro!</p>
+
+                        <form class="form-register">
+                            <div class="form-row">
+                                <div class="form-group half-width">
+                                    <label for="firstName">👤 Nombre</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="form-group half-width">
+                                    <label for="lastName">👥 Apellido</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Tu apellido" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="username">🎮 Nombre de Usuario</label>
+                                <input type="text" id="username" name="username" placeholder="Tu nombre gamer" required>
+                                <small class="field-hint">Será visible para otros usuarios</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">📧 Correo Electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="tu-email@ejemplo.com" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group half-width">
+                                    <label for="password">🔒 Contraseña</label>
+                                    <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required>
+                                    <div class="password-strength">
+                                        <div class="strength-bar">
+                                            <div class="strength-fill" id="strengthFill"></div>
+                                        </div>
+                                        <small id="strengthText">Ingresa una contraseña</small>
+                                    </div>
+                                </div>
+                                <div class="form-group half-width">
+                                    <label for="confirmPassword">🔐 Confirmar Contraseña</label>
+                                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repite tu contraseña" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="birthDate">🎂 Fecha de Nacimiento</label>
+                                <input type="date" id="birthDate" name="birthDate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="favoriteGenre">🎯 Género de Juego Favorito</label>
+                                <select id="favoriteGenre" name="favoriteGenre">
+                                    <option value="">Selecciona tu género favorito</option>
+                                    <option value="platformer">🍄 Plataformas</option>
+                                    <option value="rpg">🗡️ RPG</option>
+                                    <option value="action">⚡ Acción</option>
+                                    <option value="puzzle">🧩 Puzzle</option>
+                                    <option value="racing">🏁 Carreras</option>
+                                    <option value="fighting">🥊 Lucha</option>
+                                    <option value="shooter">🔫 Disparos</option>
+                                    <option value="adventure">🗺️ Aventura</option>
+                                </select>
+                            </div>
+
+                            <div class="form-checkboxes">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="newsletter" checked>
+                                    <span class="checkmark"></span>
+                                    📬 Recibir newsletter con ofertas y novedades
+                                </label>
+
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="terms" required>
+                                    <span class="checkmark"></span>
+                                    Acepto los <a href="#" class="terms-link">términos y condiciones</a>
+                                </label>
+
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    Acepto la <a href="#" class="terms-link">política de privacidad</a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-register">🎮 Crear Mi Cuenta</button>
+                        </form>
+
+                        <div class="login-divider">
+                            <span>o regístrate con</span>
+                        </div>
+
+                        <div class="social-register">
+                            <button class="btn-social google">
+                                <span>🌐</span> Google
+                            </button>
+                            <button class="btn-social facebook">
+                                <span>📘</span> Facebook
+                            </button>
+                        </div>
+
+                        <div class="login-link">
+                            <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🕹️ RetroPixel Store</h3>
+                    <p>Tu destino favorito para revivir la magia de los videojuegos clásicos.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="productos.html">Juegos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📧 info@retropixelstore.com</p>
+                    <p>📞 +56 9 8765 4321</p>
+                    <p>📍 Santiago, Chile</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 RetroPixel Store. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Validación de fortaleza de contraseña
+        function checkPasswordStrength(password) {
+            let strength = 0;
+            let strengthText = '';
+            let strengthColor = '';
+
+            if (password.length >= 8) strength++;
+            if (password.match(/[a-z]/)) strength++;
+            if (password.match(/[A-Z]/)) strength++;
+            if (password.match(/[0-9]/)) strength++;
+            if (password.match(/[^a-zA-Z0-9]/)) strength++;
+
+            switch(strength) {
+                case 0:
+                case 1:
+                    strengthText = 'Muy débil';
+                    strengthColor = '#ff4757';
+                    break;
+                case 2:
+                    strengthText = 'Débil';
+                    strengthColor = '#ff6348';
+                    break;
+                case 3:
+                    strengthText = 'Media';
+                    strengthColor = '#ffa502';
+                    break;
+                case 4:
+                    strengthText = 'Fuerte';
+                    strengthColor = '#2ed573';
+                    break;
+                case 5:
+                    strengthText = 'Muy fuerte';
+                    strengthColor = '#1e90ff';
+                    break;
+            }
+
+            return { strength, strengthText, strengthColor };
+        }
+
+        // Event listener para contraseña
+        document.getElementById('password').addEventListener('input', function() {
+            const password = this.value;
+            const { strength, strengthText, strengthColor } = checkPasswordStrength(password);
+            
+            const strengthFill = document.getElementById('strengthFill');
+            const strengthTextEl = document.getElementById('strengthText');
+            
+            strengthFill.style.width = (strength * 20) + '%';
+            strengthFill.style.backgroundColor = strengthColor;
+            strengthTextEl.textContent = strengthText;
+            strengthTextEl.style.color = strengthColor;
+        });
+
+        // Validación de confirmación de contraseña
+        document.getElementById('confirmPassword').addEventListener('input', function() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = this.value;
+            
+            if (confirmPassword && password !== confirmPassword) {
+                this.style.borderColor = '#ff4757';
+            } else {
+                this.style.borderColor = '#3a3f5c';
+            }
+        });
+
+        // Simulación de envío de formulario
+        document.querySelector('.form-register').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validar que las contraseñas coincidan
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('❌ Las contraseñas no coinciden');
+                return;
+            }
+
+            // Validar términos y condiciones
+            const termsAccepted = document.querySelector('input[name="terms"]').checked;
+            const privacyAccepted = document.querySelector('input[name="privacy"]').checked;
+            
+            if (!termsAccepted || !privacyAccepted) {
+                alert('❌ Debes aceptar los términos y condiciones y la política de privacidad');
+                return;
+            }
+
+            alert('🎉 ¡Registro exitoso! Esta es solo una vista previa visual. La funcionalidad real está en desarrollo.');
+        });
+
+        // Simulación de botones sociales
+        document.querySelectorAll('.btn-social').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('🔗 Integración con redes sociales en desarrollo. Esta es solo una vista previa visual.');
+            });
+        });
+    </script>
+</body>
+</html>
