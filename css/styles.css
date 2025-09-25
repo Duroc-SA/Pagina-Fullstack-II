@@ -165,6 +165,14 @@ main {
     background-repeat: no-repeat;
 }
 
+/* Hero específico de la página de contacto con GIF */
+.hero-contacto {
+    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('../img/gif/giftcontacto.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .hero h2 {
     font-size: 36px;
     color: #ffffff;
@@ -175,6 +183,10 @@ main {
     font-size: 18px;
     color: #a0a6c1;
     margin-bottom: 30px;
+}
+
+.hero-contacto p {
+    color: #ffffff; /* Color turquesa brillante para el texto del contacto */
 }
 
 /* Botones */
