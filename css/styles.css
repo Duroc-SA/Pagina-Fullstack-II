@@ -144,7 +144,7 @@ main {
 
 /* Hero específico del homepage con GIF de fondo */
 .hero-homepage {
-    background: linear-gradient(rgba(36, 41, 56, 0.6), rgba(36, 41, 56, 0.6)), url('../img/Gif/homepagegif.gif');
+        background: linear-gradient(rgba(36, 41, 56, 0.6), rgba(36, 41, 56, 0.6)), url('../img/Gif/homepagegif.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ main {
 
 /* Hero específico de la página de contacto con GIF */
 .hero-contacto {
-    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('../img/gif/giftcontacto.gif');
+    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('../img/Gif/giftcontacto.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
