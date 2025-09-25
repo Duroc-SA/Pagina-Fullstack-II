@@ -157,9 +157,9 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+/*  Hero específico de la página de blogs con GIF */
 .hero-blogs {
-    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('../img/gif/waos.gif');
+    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('../img/gif/blogs.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
