@@ -144,7 +144,7 @@ main {
 
 /* Hero específico del homepage con GIF de fondo */
 .hero-homepage {
-        background: linear-gradient(rgba(36, 41, 56, 0.6), rgba(36, 41, 56, 0.6)), url('../img/Gif/homepagegif.gif');
+    background: linear-gradient(rgba(36, 41, 56, 0.6), rgba(36, 41, 56, 0.6)), url('/Pagina-Fullstack-II/img/Gif/homepagegif.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,14 +152,14 @@ main {
 
 /* Hero específico de la página de productos con GIF de juegos */
 .hero-juegos {
-    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('../img/Gif/bannerjuegos2.gif');
+    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('/Pagina-Fullstack-II/img/Gif/bannerjuegos2.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 /*  Hero específico de la página de blogs con GIF */
 .hero-blogs {
-    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('../img/Gif/blogs.gif');
+    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('/Pagina-Fullstack-II/img/Gif/blogs.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ main {
 
 /* Hero específico de la página de contacto con GIF */
 .hero-contacto {
-    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('../img/Gif/giftcontacto.gif');
+    background: linear-gradient(rgba(36, 41, 56, 0.4), rgba(36, 41, 56, 0.4)), url('/Pagina-Fullstack-II/img/Gif/giftcontacto.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
