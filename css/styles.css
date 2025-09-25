@@ -242,6 +242,30 @@ main {
     margin-bottom: 15px;
     background-color: #1a1d29;
 }
+/* Formulario de contacto */
+
+.formulario-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.campo-form {
+    margin-bottom: 15px;
+}
+
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo-form input,
+.campo-form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
 
 /* Tamaño de GIFs */
 .gif-producto {
